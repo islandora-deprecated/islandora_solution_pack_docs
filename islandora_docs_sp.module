@@ -9,7 +9,7 @@
  * islandora pdf sp required fedora objects
  * @return type 
  */
-function islandora_docs_sp_required_fedora_objects() {
+function islandora_docs_sp_fedora_repository_required_fedora_objects() {
 
     // Get the module name and path name
     $module_name = explode('.module',basename(__FILE__));
