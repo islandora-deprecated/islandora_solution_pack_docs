@@ -1,0 +1,32 @@
+<?php
+
+module_load_include('inc', 'fedora_repository', 'fedora_repository.test');
+
+/**
+ * @file
+ * All tests relating to Islandora's Document Solution Pack.
+ */
+class DocSolutionPackTestCase extends SolutionPackTestCase {
+
+  /**
+   * Returns properties that are displayed in the test selection form.
+   *
+   * @return array - An associative array of info used to populate the test selection form
+   */
+  public static function getInfo() {
+    return array(
+      'name' => 'Islandora Document Solution Pack Test Case',
+      'description' => "Functional tests for the Islandora Document Solution Pack.",
+      'group' => 'Solution Packs',
+    );
+  }
+ 
+  /**
+   * Overridden to provide the short form name of the module being tested.
+   *
+   * @return string - 'islandora_docs_sp'
+   */
+  protected function getModuleName() { 
+    return 'islandora_docs_sp';
+  }
+}
